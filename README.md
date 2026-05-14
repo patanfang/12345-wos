@@ -29,6 +29,7 @@
 ## ⚙️ 系统架构与核心实现
 
 系统核心采用**三阶段字段映射引擎**，由浅入深确保字段识别准确率：
+<img width="865" height="486" alt="image" src="https://github.com/user-attachments/assets/43d1f62b-6d12-4d30-9307-40207281fc1d" />
 
 ### 1. 精确匹配层（快速）
 基于 `mapping_rules.yaml` 维护的高频字段映射规则，毫秒级命中已知变体。
