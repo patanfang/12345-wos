@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Python-3.13-blue) ![](https://img.shields.io/badge/LLM-GLM--4.5--Flash-green) ![](https://img.shields.io/badge/Dependency_Manager-Poetry-blueviolet)
 ## 🚀 快速开始 (Quick Start)
-下载压缩包，解压之后，可以直接点击exe文件运行。
+从release中下载压缩包，解压之后，可以直接点击exe文件运行。
 如果要处理自己的excel工单，请编辑paht.json文件修改excel文件的路径，目前已经在./test/excel目录中放了测试文件
 需要二次开发联系patanfang@foxmail.com,tel:13917398936
 
