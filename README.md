@@ -1,6 +1,10 @@
 # 基于大模型与向量检索的市民热线工单数据自动标准化系统
 
 ![](https://img.shields.io/badge/Python-3.13-blue) ![](https://img.shields.io/badge/LLM-GLM--4.5--Flash-green) ![](https://img.shields.io/badge/Dependency_Manager-Poetry-blueviolet)
+## 🚀 快速开始 (Quick Start)
+下载压缩包，解压之后，可以直接点击exe文件运行。
+如果要处理自己的excel工单，请编辑paht.json文件修改excel文件的路径，目前已经在./test/excel目录中放了测试文件
+需要二次开发联系patanfang@foxmail.com,tel:13917398936
 
 ## 📖 项目背景
 
@@ -69,7 +73,5 @@
 - **向量检索实践**：脱离外部重型向量数据库，构建轻量级本地语义匹配池，极大降低部署成本。
 - **自动化处理思维**：从传统的“一层映射”升级为“三阶段兜底”，实现了效率与泛化能力的完美平衡。
 
-## 🚀 快速开始 (Quick Start)
-下载压缩包，解压之后，可以直接点击exe文件运行。
-如果要处理自己的excel工单，请编辑paht.json文件修改excel文件的路径，目前已经在./test/excel目录中放了测试文件
+
 
