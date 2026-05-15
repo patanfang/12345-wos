@@ -1,6 +1,6 @@
 # 基于大模型与向量检索的市民热线工单数据自动标准化系统
 
-![](https://img.shields.io/badge/Python-3.13-blue) ![](https://img.shields.io/badge/LLM-GLM--4.5--Flash-green) ![](https://img.shields.io/badge/Dependency_Manager-Poetry-blueviolet)
+![](https://img.shields.io/badge/Python-3.13-blue) ![](https://img.shields.io/badge/LLM-GLM--4.7--Flash-green) ![](https://img.shields.io/badge/Dependency_Manager-Poetry-blueviolet)
 ## 🚀 快速开始 (Quick Start)
 从release中下载压缩包，解压之后，可以直接点击exe文件运行。
 如果要处理自己的excel工单，请编辑paht.json文件修改excel文件的路径，目前已经在./test/excel目录中放了测试文件
@@ -25,7 +25,7 @@
 | :--- | :--- |
 | **开发语言** | Python 3.13 |
 | **依赖管理** | Poetry |
-| **大语言模型** | GLM-4.5-Flash (通过 zai-sdk 接入) |
+| **大语言模型** | GLM-4.7-Flash (通过 zai-sdk 接入) |
 | **向量语义模型** | sentence-transformers |
 | **数据处理** | Pandas, NumPy, scikit-learn, openpyxl |
 | **配置与美化** | PyYAML, Rich |
@@ -43,7 +43,7 @@
 使用 `sentence-transformers` 对字段名进行语义向量化，计算与标准字段库的余弦相似度。当阈值 `>0.85` 时自动完成映射，解决“同义不同名”问题。
 
 ### 3. 大模型兜底层（泛化）
-对前两层无法匹配的疑难字段，调用 `GLM-4.5-Flash`，通过精心调优的 Prompt 引导模型判断字段语义并映射到标准字段，单字段映射成功率 `>96%`。
+对前两层无法匹配的疑难字段，调用 `GLM-4.7-Flash`，通过精心调优的 Prompt 引导模型判断字段语义并映射到标准字段，单字段映射成功率 `>96%`。
 
 ---
 
@@ -69,7 +69,7 @@
 ## 💡 个人技术体现
 
 - **Python 工程能力**：采用 Poetry + 模块化设计（`field_mapper` / `loader` / `writer`），结构清晰，支持长期维护。
-- **大模型应用能力**：实际调优 GLM-4.5-Flash Prompt，精准处理字段语义歧义，避免幻觉。
+- **大模型应用能力**：实际调优 GLM-4.7-Flash Prompt，精准处理字段语义歧义，避免幻觉。
 - **向量检索实践**：脱离外部重型向量数据库，构建轻量级本地语义匹配池，极大降低部署成本。
 - **自动化处理思维**：从传统的“一层映射”升级为“三阶段兜底”，实现了效率与泛化能力的完美平衡。
 
